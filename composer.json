@@ -12,5 +12,10 @@
     ],
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "map": [
+            ["app/code/local/Edge/GoogleAdwordConversionTracking", "app/code/local/Edge/GoogleAdwordConversionTracking"]
+        ]
     }
 }
