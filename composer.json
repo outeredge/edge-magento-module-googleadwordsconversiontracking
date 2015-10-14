@@ -1,0 +1,16 @@
+
+{
+    "name": "outeredge/edge-magento-module-googleadwordsconversiontracking",
+    "type": "magento-module",
+    "description": "Google AdWords conversion tracking on checkout success Module by outer/edge",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "outer/edge",
+            "email": "hello@outeredgeuk.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
