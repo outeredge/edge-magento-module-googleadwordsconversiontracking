@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Edge_GoogleAdwordsConversionTracking>
+            <version>1.0.0</version>
+        </Edge_GoogleAdwordsConversionTracking>
+    </modules>
+    <global>
+        <blocks>
+            <googleadwordsconversiontracking>
+                <class>Edge_GoogleAdwordsConversionTracking_Block</class>
+            </googleadwordsconversiontracking>
+        </blocks>
+        <helpers>
+            <googleadwordsconversiontracking>
+                <class>Edge_GoogleAdwordsConversionTracking_Helper</class>
+            </googleadwordsconversiontracking>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <edge>
+                    <file>edge/googleadwordsconversiontracking.xml</file>
+                </edge>
+            </updates>
+        </layout>
+    </frontend>
+</config>

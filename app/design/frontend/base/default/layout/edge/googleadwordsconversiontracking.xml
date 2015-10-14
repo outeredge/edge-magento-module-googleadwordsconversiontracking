@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<layout>
+    <checkout_onepage_success>
+        <reference name="head" before="-">
+            <block type="googleadwordsconversiontracking/ga" name="google_adwords_tracking" as="google_adwords_tracking" template="edge/googleadwordsconversiontracking/ga.phtml" />
+        </reference>
+    </checkout_onepage_success>
+</layout>

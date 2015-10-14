@@ -1,0 +1,29 @@
+<?php
+/**
+ * @category    design
+ * @package     edge_googleadwordsconversiontracking
+ */
+?>
+<?php $_helper = $this->helper('googleadwordsconversiontracking'); ?>
+<?php if (!$this->helper('core/cookie')->isUserNotAllowSaveCookie()): ?>
+    <!-- BEGIN GOOGLE ADWORDS CONVERSION CODE -->
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            var google_conversion_id = "<?php echo $_helper->getConversionId() ?>";
+            var google_conversion_language = "<?php echo Mage::app()->getLocale()->getLocaleCode(); ?>";
+            var google_conversion_format = "1";
+            var google_conversion_color = "ffffff";
+            var google_conversion_label = "<?php echo $_helper->getConversionLabel() ?>";
+            var google_conversion_value = <?php echo $_helper->getOrderGrandTotal() ?>;
+            var google_conversion_currency = "<?php echo $_helper->getOrderCurrency() ?>";
+            var google_remarketing_only = false;
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+        <noscript>
+            <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1068330476/?value=1.00&amp;currency_code=GBP&amp;label=ZZSRCNDBVhDs27X9Aw&amp;guid=ON&amp;script=0"/>
+        </div>
+        </noscript>
+    <!-- END GOOGLE ADWORDS CONVERSION CODE -->
+<?php endif; ?>
