@@ -20,9 +20,9 @@
     <frontend>
         <layout>
             <updates>
-                <edge>
+                <googleadwordsconversiontracking>
                     <file>edge/googleadwordsconversiontracking.xml</file>
-                </edge>
+                </googleadwordsconversiontracking>
             </updates>
         </layout>
     </frontend>
